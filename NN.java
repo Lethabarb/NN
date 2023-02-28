@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -48,10 +49,15 @@ public class NN {
     public void setOutputs(ArrayList<Node> outputs) {
         this.outputs = outputs;
     }
-    public ArrayList<ArrayList<Node>> getHiddenLayers() {
-        return hiddenLayers;
+    public ArrayList<Node[]> getHiddenLayers() {
+        return hiddenLayers; 
     }
-    public void setHiddenLayers(ArrayList<ArrayList<Node>> hiddenLayers) {
+    public void setHiddenLayers(ArrayList<Node[]> hiddenLayers) {
         this.hiddenLayers = hiddenLayers;
     }
+
+    public void runData(String imagepath) {
+        File f = new File(imagepath);
+    }
+
 }
